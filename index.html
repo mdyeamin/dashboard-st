@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn  -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <style type="text/tailwindcss">
+        @theme {
+        /* --color-clifford: #da373d; */
+        --color-primary-bg: #efeeee ;
+        --color-light-gray: #da373d;
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
+      }
+    </style>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Enthrall</title>
+
+</head>
+
+<body class="bg-primary-bg max-w-6xl mx-auto">
+    <header class="bg-white h-16 my-3 rounded-2xl px-5">
+        <div class="h-full flex justify-between items-center ">
+            <img class="w-40" src="images/logo.png" alt="">
+            <div class="flex items-center gap-5">
+                <i class="fa-solid fa-bell text-lg"></i>
+                <img class="rounded-full w-5" src="images/office-worker.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    </head>
+
+    <div class="min-h-screen flex ">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="bg-white w-48 p-4 space-y-3 shadow-md md:block hidden fixed md:relative z-10 h-full rounded-2xl">
+
+            <nav class="space-y-2">
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="index.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/dashboard.png" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="profile.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/profile.png" alt="">
+                        <span>Profile</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="payment.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/payment.png" alt="">
+                        <span>Payment</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="admin_approve.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/admin_approve.png" alt="">
+                        <span>Admin Approve</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="staff.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/staff.png" alt="">
+                        <span>Staff</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="create_question.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/create_question.png" alt="">
+                        <span>Create Question</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="create.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/create.png" alt="">
+                        <span>Create</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="recording(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/recording_su.png" alt="">
+                        <span>Recording (SU)</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="students_list.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/student_list.png" alt="">
+                        <span>Student List</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="application_list.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/application_list.png" alt="">
+                        <span>Application List</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="file_upload.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/file_upload.png" alt="">
+                        <span>File Upload</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="schedule.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/schedule.png" alt="">
+                        <span>Schedule</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="quiz_list(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/quiz.png" alt="">
+                        <span>Quiz List(SU)</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="home_work(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/homework.png" alt="">
+                        <span>Home Work(SU)</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="challenge(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/challenge.png" alt="">
+                        <span>Challenge(SU)</span>
+                    </a>
+                </button>
+
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="exam(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/exam.png" alt="">
+                        <span>Exam(SU)</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="bootcamp(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/bootcamp.png" alt="">
+                        <span>Bootcamp(SU)</span>
+                    </a>
+                </button>
+
+
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="add_course.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/add_course.png" alt="">
+                        <span>Add Course</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="quiz_list.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/quiz.png" alt="">
+                        <span>Quiz List</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="home_work.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/homework.png" alt="">
+                        <span>Home Work</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="challenge.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/challenge.png" alt="">
+                        <span>Challenge</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="exam.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/exam.png" alt="">
+                        <span>Exam</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="resources.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/resources.png" alt="">
+                        <span>Resourcse</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="bootcamp.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/bootcamp.png" alt="">
+                        <span>Bootcamp</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="automation.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/automation.png" alt="">
+                        <span>Automation</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="class_notes(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/class_note_su.png" alt="">
+                        <span>Class Notes (SU)</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="class_schedule.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/class_schedule.png" alt="">
+                        <span>Class Schedule</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="join_the_class.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/join_the_class.png" alt="">
+                        <span>Join The Class</span>
+                    </a>
+                </button>
+
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="class_recording.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/class_recording.png" alt="">
+                        <span>Class Recording</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="others.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/others.png" alt="">
+                        <span>Others</span>
+                    </a>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Overlay for mobile -->
+        <div id="overlay" class="fixed inset-0 bg-transparent z-0 hidden md:hidden" onclick="toggleSidebar()"></div>
+
+        <!-- Main content -->
+        <div class="flex-1 p-4 ">
+            <!-- Mobile toggle button -->
+            <button onclick="toggleSidebar()" class="md:hidden mb-4 text-dark-gray bg-yellow px-4 py-2 rounded">☰
+                Menu</button>
+
+            <!-- Dynamic Content -->
+            <div class="" id="main-content">
+                <div class=" min-h-screen p-4">
+                    <!-- Profile Section -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                        <div class="lg:col-span-2">
+                            <div class="bg-white rounded-xl p-6 shadow">
+                                <h2 class="text-2xl font-bold mb-4">Personal Information</h2>
+                                <div class="flex items-center gap-4">
+                                    <img src="images/profile.jpg" alt="Profile"
+                                        class="w-24 h-24 rounded-full object-cover" />
+                                    <div class="flex flex-col gap-2 flex-1">
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Full Name: Md.
+                                            Hasibul Hasan</div>
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Students ID:
+                                            000056</div>
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Phone Number:
+                                            016 4197 3817</div>
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Email Address:
+                                            onlyhasan56@gmail.com</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- My Courses -->
+                            <div class="bg-white rounded-xl p-6 shadow mt-6">
+                                <h2 class="text-2xl font-bold mb-4">My Courses</h2>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <!-- Course Card -->
+                                    <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
+                                        <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
+                                            alt="Course" />
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
+                                            <div class="flex gap-2 text-xs mt-1">
+                                                <span
+                                                    class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px]"><img
+                                                        class="w-3 inline-block mr-1" src="images/live_icon.png" alt="">
+                                                    On Going</span>
+                                                <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
+                                        <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
+                                            alt="Course" />
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
+                                            <div class="flex gap-2 text-xs mt-1">
+                                                <span
+                                                    class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px] rounded"><img
+                                                        class="w-3 inline-block mr-1" src="images/live_icon.png" alt="">
+                                                    On Going</span>
+                                                <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
+                                        <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
+                                            alt="Course" />
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
+                                            <div class="flex gap-2 text-xs mt-1">
+                                                <span
+                                                    class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px] rounded"><img
+                                                        class="w-3 inline-block mr-1" src="images/live_icon.png" alt="">
+                                                    On Going</span>
+                                                <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
+                                        <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
+                                            alt="Course" />
+                                        <div>
+                                            <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
+                                            <div class="flex gap-2 text-xs mt-1">
+                                                <span
+                                                    class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px] rounded"><img
+                                                        class="w-3 inline-block mr-1" src="images/live_icon.png" alt="">
+                                                    On Going</span>
+                                                <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Today's Class -->
+                        <div>
+                            <div class="bg-white p-5 rounded-xl shadow-sm w-full md:max-w-sm">
+                                <h2 class="text-red-600 text-lg font-semibold mb-4">Today’s classes – 12 July</h2>
+
+                                <!-- Single Class Card -->
+                                <div class="bg-gray-50 p-2 rounded-lg mb-4">
+                                    <div class="flex items-center justify-between text-xs mb-5 text-gray-600">
+                                        <span class="bg-gray-200 px-1 py-0.5 rounded font-medium">Batch: 10</span>
+                                        <span class="text-sm font-medium text-gray-700">Business Analyst Bootcamp</span>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-2 text-sm text-gray-700">
+                                        <span>Module 10</span>
+                                        <span class="bg-gray-200 text-gray-800 px-2 py-0.5 rounded text-xs">Live
+                                            Class</span>
+                                    </div>
+                                    <h3 class="font-semibold text-sm mb-3">
+                                        Topic: <span class="font-bold">HTML & CSS Basic</span>
+                                    </h3>
+                                    <button
+                                        class="flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold w-full py-2 rounded-lg text-sm transition duration-300">
+                                        <svg class="w-4 h-4 fill-current text-black" viewBox="0 0 24 24">
+                                            <path
+                                                d="M20 15.31L23.31 12 20 8.69v6.62zM19 5H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 12H3V7h16v10z" />
+                                        </svg>
+                                        Class is ongoing, join now
+                                    </button>
+                                </div>
+
+                                <!-- Duplicate Class Card (you can loop this) -->
+                                <div class="bg-gray-50 p-2 rounded-lg mb-4">
+                                    <div class="flex items-center justify-between text-xs mb-5 text-gray-600">
+                                        <span class="bg-gray-200 px-1 py-0.5 rounded font-medium">Batch: 10</span>
+                                        <span class="text-sm font-medium text-gray-700">Business Analyst Bootcamp</span>
+                                    </div>
+                                    <div class="flex items-center justify-between mb-2 text-sm text-gray-700">
+                                        <span>Module 10</span>
+                                        <span class="bg-gray-200 text-gray-800 px-2 py-0.5 rounded text-xs">Live
+                                            Class</span>
+                                    </div>
+                                    <h3 class="font-semibold text-sm mb-3">
+                                        Topic: <span class="font-bold">HTML & CSS Basic</span>
+                                    </h3>
+                                    <button
+                                        class="flex items-center justify-center gap-2 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold w-full py-2 rounded-lg text-sm transition duration-300">
+                                        <svg class="w-4 h-4 fill-current text-black" viewBox="0 0 24 24">
+                                            <path
+                                                d="M20 15.31L23.31 12 20 8.69v6.62zM19 5H3c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 12H3V7h16v10z" />
+                                        </svg>
+                                        Class is ongoing, join now
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        const buttons = document.querySelectorAll('.toggle-btn');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                resetButtons();
+                button.classList.remove('bg-gray-100', 'hover:bg-gray-100', 'text-black');
+                button.classList.add('bg-yellow', 'hover:bg-yellow', 'text-dark-gray');
+            });
+        });
+
+        // document.addEventListener('click', () => {
+        //   resetButtons();
+        // });
+
+        function resetButtons() {
+            buttons.forEach((btn) => {
+                btn.classList.remove('bg-yellow', 'hover:bg-yellow', 'text-white');
+                btn.classList.add('bg-gray-100', 'hover:bg-gray-100', 'text-black');
+            });
+        }
+
+
+
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('hidden');
+            overlay.classList.toggle('hidden');
+        }
+        // dashboard content
+        function loadPage(page) {
+            const content = {
+
+
+                // courses content 
+                courses: `
+          
+        `,
+                // quiz content 
+                quiz: `
+                
+                `,
+
+                // homework content 
+                homework: `
+                
+                `,
+                // challenge content
+                challenge: `
+
+ <!-- Challenge Section -->
+        
+
+        `,
+                // exm content     
+                exam: `
+        
+        `,
+
+
+                // resourse content 
+                resources: `
+        
+        `,
+
+
+                //   bootcamt content   
+                bootcamp: `
+        
+        `,
+
+                // automation content 
+                automation: `
+        
+        
+        `,
+
+
+                // schedule content  
+                schedule: `
+        
+        `,
+
+
+
+                // Enroll content  
+                enroll: `
+       
+
+
+        `,
+
+
+
+                // super user dashboard items
+                // user user schedule content  
+                super_user_quiz: `
+       
+        `,
+
+
+                // user user home work 
+
+                super_user_home_work: `
+        
+           `,
+
+                // user user challenge  
+                super_user_challenge: `
+        
+        `,
+
+                // user user exam  
+                super_user_exam: `
+        
+        `,
+
+                // user user bootcamp  
+                super_user_bootcamp: `
+        <div>
+            <h1 class="text-2xl font-bold">Bootcamp List</h1>
+            <div class="flex gap-5 my-3 items-center justify-center">
+              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
+                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
+                  <option value="">Select Your Course</option>
+                  <option value="one">Option One</option>
+                  <option value="two">Option Two</option>
+                  <option value="three">Option Three</option>
+                </select>
+              </form>
+
+              <form class="bg-white rounded-xl shadow-md w-6/12">
+                      <div class="flex">
+                          <input type="text" id="search" name="search" placeholder="Type to search..."
+                              class="flex-grow p-2 focus:outline-none ">
+                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
+                                  class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+
+                  </form>
+
+            </div>
+            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
+              <thead class="bg-yellow-300">
+                <tr class="text-sm font-semibold">
+                  <th class="px-4 py-2">SL</th>
+                  <th class="px-4 py-2">Bootcamp Name</th>
+                  <th class="px-4 py-2">Batch</th>
+                  <th class="px-4 py-2">Starting Date</th>
+                  
+                  <th class="px-4 py-2">Action</th>
+                </tr>
+              </thead>
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+
+              <tbody class="text-sm divide-y">
+                <tr>
+                  <td class="px-4 py-2">01</td>
+                  <td class="px-4 py-2">type test</td>
+                  <td class="px-4 py-2">2025QA01</td>
+                  <td class="px-4 py-2">12 May 2025</td>
+                  
+                  <td class="px-4 py-2">
+                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
+                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
+                  </td>
+                <tr/> 
+              </tbody>
+              
+
+            </table>
+          </div>
+        `,
+
+                // user user others  
+                super_user_others: `
+        
+        `,
+
+
+                // user user bootcamp  
+                super_user_join_class: `
+       
+        `,
+
+
+            };
+
+            // document.getElementById('main-content').innerHTML = content[page] || `<h1 class='text-xl font-bold'>Page not found</h1>`;
+
+            // if (window.innerWidth < 768) toggleSidebar();
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</body>
+
+</html>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- fontawesome cdn  -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <!-- custom css -->
+    <style type="text/tailwindcss">
+        @theme {
+        /* --color-clifford: #da373d; */
+        --color-primary-bg: #efeeee ;
+        --color-light-gray: #da373d;
+        --color-dark-gray: #132022;
+        --color-yellow: #fbcd13
+      }
+    </style>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Enthrall</title>
+</head>
+
+<body class="bg-primary-bg max-w-6xl mx-auto">
+    <header class="bg-white h-16 my-3 rounded-2xl px-5">
+        <div class="h-full flex justify-between items-center ">
+            <img class="w-40" src="images/logo.png" alt="">
+            <div class="flex items-center gap-5">
+                <i class="fa-solid fa-bell text-lg"></i>
+                <img class="rounded-full w-5" src="images/office-worker.jpg" alt="">
+            </div>
+        </div>
+    </header>
+
+    </head>
+
+    <div class="min-h-screen flex">
+        <!-- Sidebar -->
+        <div id="sidebar"
+            class="bg-white w-48 p-4 space-y-3 shadow-md md:block hidden fixed md:relative z-10 h-full rounded-2xl">
+
+            <nav class="space-y-2">
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="index.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/dashboard.png" alt="">
+                        <span>Dashboard</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="profile.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/profile.png" alt="">
+                        <span>Profile</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="payment.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/payment.png" alt="">
+                        <span>Payment</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="admin_approve.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/admin_approve.png" alt="">
+                        <span>Admin Approve</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="staff.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/staff.png" alt="">
+                        <span>Staff</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="create_question.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/create_question.png" alt="">
+                        <span>Create Question</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="create.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/create.png" alt="">
+                        <span>Create</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="recording(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/recording_su.png" alt="">
+                        <span>Recording (SU)</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="students_list.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/student_list.png" alt="">
+                        <span>Student List</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="application_list.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/application_list.png" alt="">
+                        <span>Application List</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="file_upload.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/file_upload.png" alt="">
+                        <span>File Upload</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="schedule.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/schedule.png" alt="">
+                        <span>Schedule</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="quiz_list(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/quiz.png" alt="">
+                        <span>Quiz List(SU)</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="home_work(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/homework.png" alt="">
+                        <span>Home Work(SU)</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="challenge(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/challenge.png" alt="">
+                        <span>Challenge(SU)</span>
+                    </a>
+                </button>
+
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="exam(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/exam.png" alt="">
+                        <span>Exam(SU)</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="bootcamp(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/bootcamp.png" alt="">
+                        <span>Bootcamp(SU)</span>
+                    </a>
+                </button>
+
+
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="add_course.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/add_course.png" alt="">
+                        <span>Add Course</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="quiz_list.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/quiz.png" alt="">
+                        <span>Quiz List</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="home_work.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/homework.png" alt="">
+                        <span>Home Work</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="challenge.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/challenge.png" alt="">
+                        <span>Challenge</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="exam.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/exam.png" alt="">
+                        <span>Exam</span>
+                    </a>
+                </button>
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="resources.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/resources.png" alt="">
+                        <span>Resourcse</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="bootcamp.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/bootcamp.png" alt="">
+                        <span>Bootcamp</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="automation.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/automation.png" alt="">
+                        <span>Automation</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="class_notes(SU).html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/class_note_su.png" alt="">
+                        <span>Class Notes (SU)</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="class_schedule.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/class_schedule.png" alt="">
+                        <span>Class Schedule</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="join_the_class.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/join_the_class.png" alt="">
+                        <span>Join The Class</span>
+                    </a>
+                </button>
+
+
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="class_recording.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/class_recording.png" alt="">
+                        <span>Class Recording</span>
+                    </a>
+                </button>
+                <button
+                    class="flex items-center justify-start toggle-btn w-full text-left text-sm px-4 py-2 rounded font-medium bg-gray-100 text-black">
+                    <a href="others.html" class="flex items-center justify-start w-full">
+                        <img class="mr-2 w-4" src="images/others.png" alt="">
+                        <span>Others</span>
+                    </a>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Overlay for mobile -->
+        <div id="overlay" class="fixed inset-0 bg-transparent z-0 hidden md:hidden" onclick="toggleSidebar()"></div>
+
+        <!-- Main content -->
+        <div class="flex-1 p-4 ">
+            <!-- Mobile toggle button -->
+            <button onclick="toggleSidebar()" class="md:hidden mb-4 text-dark-gray bg-yellow px-4 py-2 rounded">☰
+                Menu</button>
+
+            <!-- Dynamic Content (right side content)-->
+            <div id="main-content">
+                 <div class="w-full bg-gray-100 min-h-screen p-6">
+            <h2 class="text-2xl font-bold mb-1">Select your course from the dropdown</h2>
+            <p class="text-gray-600 mb-6">Please enter your personal and contact information.</p>
+
+            <form class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+              <!-- Row 1 -->
+              <div>
+              <label class="block text-sm mb-3">First Name*</label>
+              <input type="text" placeholder="First Name*" class="p-2 border rounded w-full">  
+              </div>
+          <div>
+             <label class="block text-sm mb-3">Middle Name</label>
+              <input type="text" placeholder="Middle Name" class="p-2 border rounded w-full">
+            </div>
+            <div>
+              <label class="block text-sm mb-3">Last Name</label>
+              <input type="text" placeholder="Last Name*" class="p-2 border rounded w-full">
+              </div>
+
+              <!-- Row 2 -->
+                <div>
+                  <label class="block text-sm mb-3">I'm*</label>
+                  <select class="p-2 border rounded w-full">
+                  <option>Select Profession</option>
+                  <option>Student1</option>
+                  <option>Student2</option>
+                  <option>Student3</option>
+                  <option>Student4</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-sm mb-3">Course Wish to Enroll*</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Course</option>
+                <option> Course1</option>
+                <option> Course2</option>
+                <option> Course3</option>
+                </select>
+                </div>
+               <div>
+                <label class="block text-sm mb-3">Phone Number*</label>
+              <input type="text" placeholder="Phone Number*" class="p-2 border rounded w-full"> 
+               </div>
+
+              <!-- Row 3 -->
+              <div>
+              <label class="block text-sm mb-3">Email Address*</label>
+              <input type="email" placeholder="Email Address*" class="p-2 border rounded w-full">  
+              </div>
+               <div>
+              <label class="block text-sm mb-3">Email Password*</label>
+              <input type="password" placeholder="Password*" class="p-2 border rounded w-full">  
+              </div>
+              <div>
+                <label class="block text-sm mb-3">Gender</label>
+              <select class="p-2 border rounded w-full">
+                <option>Choose Sex</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>Others</option>
+                </select>
+              </div>
+
+              <!-- Row 4 -->
+              <div class="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="">
+                  <label class="block text-sm mb-3">Personal Image*</label>
+                  <input type="file" class="w-full border rounded p-2">
+                </div>
+                <div class="">
+                  <label class="block text-sm mb-3">Photo ID*</label>
+                  <input type="file" class="w-full border rounded p-2">
+                </div>  
+              </div>
+
+              <!-- Row 5 -->
+              <div>
+              <label class="block text-sm mb-3">Birth Year*</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Birth Year</option>
+                <option>Year1</option>
+                <option>Year2</option>
+                <option>Year3</option>
+                <option>Year4</option>
+                <option>Year4</option>
+                <option>Year5</option>
+                <option>Year6</option>
+                </select>  
+              </div>
+             
+              <div>
+              <label class="block text-sm mb-3">Birth Month*</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Birth Month</option>
+                <option> Month1</option>
+                <option> Month2</option>
+                <option> Month3</option>
+                <option> Month4</option>
+                <option> Month5</option>
+                <option> Month6</option>
+                </select>  
+              </div>
+              
+              <div>
+              <label class="block text-sm mb-3">Birth Date*</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Birth Date</option>
+                <option>Date1</option>
+                <option>Date2</option>
+                <option>Date3</option>
+                <option>Date4</option>
+                <option>Date5</option>
+                <option>Date6</option>
+                </select>  
+              </div>
+
+              <!-- Row 6 -->
+              <div>
+              <label class="block text-sm mb-3">Home Address Line 1*</label>
+              <input type="text" placeholder="Home Address Line 1*" class="p-2 border rounded w-full">  
+              </div>
+
+              <!-- Row 7 -->
+              <div>
+              <label class="block text-sm mb-3">City*</label>
+              <input type="text" placeholder="City*" class="p-2 border rounded w-full">  
+              </div>
+              <div>
+              <label class="block text-sm mb-3">State*</label>
+              <select class="p-2 border rounded w-full"><option>Select State</option></select>  
+              </div>
+              <div>
+                <label class="block text-sm mb-3">Zip Code*</label>
+              <input type="text" placeholder="ZIP Code*" class="p-2 border rounded w-full">
+              </div>
+
+              <!-- Row 8 -->
+              <div>
+              <label class="block text-sm mb-3">Immigration Status</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Status</option>
+                <option>Citizen</option>
+                <option>Permanent Resident</option>
+                <option>Temporary Resident</option>
+                <option>International Student</option>
+                <option>Other</option>
+                </select>  
+              </div>
+              <div>
+              <label class="block text-sm mb-3">Date of Arrival</label>
+              <input type="text" placeholder="Date of Arrival" class="p-2 border rounded w-full">  
+              </div>
+              <div>
+              <label class="block text-sm mb-3">Emergency Contact (name, phone no.)</label>
+              <input type="text" placeholder="Emergency Contact (name, phone no.)" class="p-2 border rounded w-full">  
+              </div>
+
+              <!-- Row 9 -->
+              <div>
+              <label class="block text-sm mb-3">How did you know about EnthrallIT</label>
+              <input type="text" placeholder="How did you know about EnthrallIT" class="p-2 border rounded w-full">  
+              </div>
+              <div>
+              <label class="block text-sm mb-3">Highest Education</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Education</option>
+                <option>High School</option>
+                <option>Bachelor's Degree</option>
+                <option>Master's Degree</option>
+                <option>PhD</option>
+                <option>Other</option>
+
+                
+                </select>  
+              </div>
+              <div>
+              <label class="block text-sm mb-3">Country of Origin</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Country</option>
+                <option>Bangladesh</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Sri Lanka</option>
+                <option>America</option>
+                <option>United Kingdom</option>
+                <option>Canada</option>
+                <option>Australia</option>
+                <option>Japan</option>
+                <option>China</option>
+                <option>Germany</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Spain</option>
+                <option>Brazil</option>
+                <option>Mexico</option>
+                <option>Russia</option>
+                <option>South Africa</option>
+                <option>Other</option>
+
+                </select>  
+              </div>
+
+              <!-- Row 10 -->
+              <div>
+              <label class="block text-sm mb-3">Primary Language</label>
+              <select class="p-2 border rounded w-full">
+                <option>Select Language</option>
+                <option>English</option>
+                <option>Bangla</option>
+                <option>Hindi</option>
+                <option>Spanish</option>
+                <option>French</option>
+                <option>German</option> 
+                <option>Chinese</option>
+                <option>Japanese</option>
+                <option>Arabic</option>
+                <option>Russian</option>
+                <option>Portuguese</option>
+                <option>Other</option>
+                </select>  
+              </div>
+             <div>
+              <label class="block text-sm mb-3">Signature:*</label>
+              <input type="text" placeholder="Signature*" class="p-2 border rounded w-full"> 
+             </div>
+
+              <!-- Terms -->
+              <div class="col-span-1 md:col-span-3 flex items-center space-x-2 mt-2">
+                <input type="checkbox" id="terms" class="accent-blue-500">
+                <label for="terms" class="text-xs">Double Click to the <a href="#" class="text-blue-600">Terms and condition</a></label>
+              </div>
+
+              <!-- Buttons -->
+              <div class="col-span-1 md:col-span-3 flex flex-wrap gap-4 mt-4">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded">Submit</button>
+                <button type="button" class="bg-blue-400 hover:bg-blue-500 text-white px-5 py-2 rounded">Right Click Action</button>
+              </div>
+            </form>
+          </div>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+
+        const buttons = document.querySelectorAll('.toggle-btn');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', (e) => {
+                e.stopPropagation();
+                resetButtons();
+                button.classList.remove('bg-gray-100', 'hover:bg-gray-100', 'text-black');
+                button.classList.add('bg-yellow', 'hover:bg-yellow', 'text-dark-gray');
+            });
+        });
+
+        // document.addEventListener('click', () => {
+        //   resetButtons();
+        // });
+
+        function resetButtons() {
+            buttons.forEach((btn) => {
+                btn.classList.remove('bg-yellow', 'hover:bg-yellow', 'text-white');
+                btn.classList.add('bg-gray-100', 'hover:bg-gray-100', 'text-black');
+            });
+        }
+
+
+
+
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('overlay');
+            sidebar.classList.toggle('hidden');
+            overlay.classList.toggle('hidden');
+        }
+        // dashboard content
+
+    </script>
+
+
+</body>
+
+</body>
+
+</html>
