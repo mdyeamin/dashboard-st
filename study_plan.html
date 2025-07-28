@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- fontawesome cdn  -->
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
     <!-- custom css -->
@@ -17,18 +16,6 @@
         --color-dark-gray: #132022;
         --color-yellow: #fbcd13
       }
-
-      .progress-bar {
-      height: 6px;
-      background-color: #e5e7eb;
-      border-radius: 9999px;
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background-color: #3b82f6;
-    }
     </style>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
@@ -292,374 +279,117 @@
 
             <!-- Dynamic Content -->
             <div class="" id="main-content">
+                <div class="flex bg-[#F9FAFB] min-h-screen font-sans">
+                    <!-- Right Section (Main Content Area) -->
+                    <div class="flex-1 p-6 space-y-6">
 
-                <div class="">
-                    <!-- Header -->
-                    <div class="max-w-7xl mx-auto">
-                        <div class="bg-white rounded-lg overflow-hidden shadow p-4">
-                            <div class="flex flex-col md:flex-row items-center gap-4">
-                                <!-- Left: Image -->
-                                <div class="">
-                                    <img src="images/computer.jpg" alt="Dashboard Banner"
-                                        class="w-20 object-cover rounded-md" />
-                                </div>
+                        <!-- Breadcrumb -->
+                        <p class="text-sm text-gray-500">Home / My Course / Course Details / <span
+                                class="font-semibold text-black">Module 01</span></p>
 
-                                <!-- Right: Text Content -->
-                                <div class="">
-                                    <h2 class="text-xl font-semibold">Business Analyst Bootcamp</h2>
-                                    <div class="text-sm text-gray-500 flex items-center gap-4 mt-2">
-                                        <span class="text-red-500 font-medium">🔴 On Going</span>
-                                        <span class="bg-gray-200 px-2 py-0.5 rounded text-xs">Batch: 10</span>
+                        <!-- Module Header -->
+                        <div class="bg-white rounded-xl p-4 shadow-sm flex justify-between items-start">
+                            <!-- Left Side: Module Info -->
+                            <div class="flex gap-4">
+                                <div class="bg-yellow-100 text-yellow-800 font-semibold text-sm px-2 py-1 rounded">
+                                    Module 01</div>
+                                <div>
+                                    <p class="font-semibold text-sm">Test Analysis</p>
+                                    <p class="text-xs text-gray-500">8 Apr - 15 Apr</p>
+                                    <div class="text-xs text-gray-600 mt-1 flex flex-wrap gap-x-2">
+                                        <span>Quiz</span> •
+                                        <span>Homework</span> •
+                                        <span>Exam</span> •
+                                        <span>Coding Challenge</span> •
+                                        <span>Bootcamp</span>
                                     </div>
                                 </div>
+                            </div>
+
+                            <!-- Right Side: Video Box -->
+                            <div class="flex items-center gap-3 bg-yellow-100 p-3 rounded-lg">
+                                <div class="text-yellow-700">
+                                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
+                                        viewBox="0 0 24 24">
+                                        <path d="M15 10l4.6-2.3A1 1 0 0121 8.6v6.8a1 1 0 01-1.4.9L15 14" />
+                                        <rect x="3" y="5" width="12" height="14" rx="2" ry="2"></rect>
+                                    </svg>
+                                </div>
+                                <div class="flex flex-col">
+                                    <p class="text-sm font-semibold text-gray-800">Pre-Recorded Video</p>
+                                    <p class="text-xs text-gray-500">See the full video to complete this module</p>
+                                </div>
+                                <button
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-white text-sm font-medium px-3 py-1 rounded">See
+                                    Video</button>
                             </div>
                         </div>
 
+                        <!-- Completion Bar -->
+                        <div class="text-sm text-gray-700">
+                            Complete all items in the module.
+                            <span class="text-green-600">Quiz</span>
+                            <span class="text-green-600">Homework</span>
+                            <span class="text-gray-500">Exam</span>
+                            <span class="text-gray-500">Coding Challenge</span>
+                            <span class="text-gray-500">Bootcamp</span>
+                        </div>
 
-                        <!-- Main Dashboard -->
-                        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6">
-                            <!-- Left Content -->
-                            <div class="lg:col-span-3 space-y-6">
-                                <div class="bg-white rounded-lg shadow p-6">
-                                    <h2 class="text-xl font-semibold mb-2">Dashboard</h2>
-                                    <p class="text-xl mb-4">You are going great! Push yourself <br> a
-                                        little
-                                        and You can be BEST!</p>
-                                    <div class="flex items-center gap-4">
-                                        <div class="w-8/12">
-                                            <div class="w-full">
-                                                <div class="flex justify-between mb-1">
+                        <!-- Your Study Plan -->
+                        <div class="space-y-4">
+                            <h2 class="text-lg font-semibold">Your Study Plan</h2>
 
-                                                </div>
-                                                <div class="w-full bg-gray-200 rounded h-5">
-                                                    <div class="bg-blue-600 h-5 rounded transition-all duration-500"
-                                                        style="width: 78%;"></div>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <span class="text-lg font-bold">78%</span>
+                            <!-- Card 1 -->
+                            <div class="bg-white rounded-lg p-4 shadow-sm space-y-1">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex items-center gap-2 text-xs text-gray-500">
+                                        <span class="bg-green-100 text-green-700 font-semibold px-2 py-0.5 rounded">Live
+                                            Class</span>
+                                        <span>8 Apr - 15 Apr</span>
+                                        <span>Attendance score will be added.</span>
                                     </div>
-                                    <p class="text-xs text-gray-400 mt-1">Your Overall Score</p>
-                                </div>
-
-                                <div class="flex flex-wrap gap-2">
-                                    <button class="px-4 py-1 bg-black text-white text-sm rounded">Module</button>
-                                    <button class="px-4 py-1 border border-gray-300 rounded text-sm">Assignment</button>
-                                    <button class="px-4 py-1 border border-gray-300 rounded text-sm">Recording</button>
-                                    <button class="px-4 py-1 border border-gray-300 rounded text-sm">Recourse</button>
-                                    <button
-                                        class="px-4 py-1 border border-gray-300 rounded text-sm">Certificates</button>
-                                </div>
-
-                                <!-- Cards -->
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <!-- Card 1 -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
-                                        <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
-                                            <div>
-                                                <p class="text-xs text-gray-500">Module</p>
-                                                <p class="font-semibold text-sm">01</p>
-                                            </div>
-                                            <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
-                                                <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
-                                            Early bird: Those who enrolled before the start of classes
-                                        </p>
-
-                                        <!-- Tags -->
-                                        <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
-                                        </ul>
-
-                                        <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
-                                            <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                    Plan</button>
-                                            </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Repeat Card -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
-                                        <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
-                                            <div>
-                                                <p class="text-xs text-gray-500">Module</p>
-                                                <p class="font-semibold text-sm">01</p>
-                                            </div>
-                                            <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
-                                                <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
-                                            Early bird: Those who enrolled before the start of classes
-                                        </p>
-
-                                        <!-- Tags -->
-                                        <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
-                                        </ul>
-
-                                        <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
-                                            <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                    Plan</button>
-                                            </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
-                                        </div>
-                                    </div>
-                                    <!-- Repeat Card -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
-                                        <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
-                                            <div>
-                                                <p class="text-xs text-gray-500">Module</p>
-                                                <p class="font-semibold text-sm">01</p>
-                                            </div>
-                                            <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
-                                                <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
-                                            Early bird: Those who enrolled before the start of classes
-                                        </p>
-
-                                        <!-- Tags -->
-                                        <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
-                                        </ul>
-
-                                        <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
-                                            <a href="study_plan.html">
-                                                <a href="study_plan.html">
-                                                    <button
-                                                        class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                        Plan</button>
-                                                </a>
-                                            </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
-                                        </div>
-                                    </div>
-                                    <!-- Repeat Card -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
-                                        <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
-                                            <div>
-                                                <p class="text-xs text-gray-500">Module</p>
-                                                <p class="font-semibold text-sm">01</p>
-                                            </div>
-                                            <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
-                                                <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
-                                            </div>
-                                        </div>
-
-
-
-                                        <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
-                                            Early bird: Those who enrolled before the start of classes
-                                        </p>
-
-                                        <!-- Tags -->
-                                        <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
-                                        </ul>
-
-                                        <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
-                                            <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                    Plan</button>
-                                            </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
-                                        </div>
+                                    <div class="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded">LIVE
                                     </div>
                                 </div>
+                                <p class="text-sm font-semibold">Strings and Conditional Statement</p>
+                                <p class="text-xs text-gray-500">
+                                    Strings | Formatted Strings | String Methods | Numbers and Math Operations |
+                                    Operator Precedence | Math Functions | If Statements | Logical Operators |
+                                    Comparison Operators | While Loops
+                                </p>
+                                <button
+                                    class="border border-gray-300 text-sm mt-2 px-3 py-1 rounded hover:bg-gray-100">Recording</button>
                             </div>
 
-                            <!-- Right Content -->
-                            <div class="max-h-min bg-white rounded-lg shadow p-4">
-                                <h3 class="text-lg font-semibold mb-4">Overview</h3>
-
-                                <div class="space-y-2 text-sm">
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Quiz</span>
-                                            <span>78%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 78%"></div>
-                                        </div>
+                            <!-- Card 2 -->
+                            <div class="bg-white rounded-lg p-4 shadow-sm space-y-1">
+                                <div class="flex justify-between items-start">
+                                    <div class="flex items-center gap-2 text-xs text-gray-500">
+                                        <span class="bg-green-100 text-green-700 font-semibold px-2 py-0.5 rounded">Live
+                                            Class</span>
+                                        <span>8 Apr - 15 Apr</span>
+                                        <span>Attendance score will be added.</span>
                                     </div>
-
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Homework</span>
-                                            <span>50%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 50%"></div>
-                                        </div>
+                                    <div class="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded">LIVE
                                     </div>
-
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Exam</span>
-                                            <span>86%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 86%"></div>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Coding Challenge</span>
-                                            <span>67%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 67%"></div>
-                                        </div>
-                                    </div>
-
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Bootcamp</span>
-                                            <span>47%</span>
-                                        </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 47%"></div>
-                                        </div>
-                                    </div>
+                                </div>
+                                <p class="text-sm font-semibold">Methods Details</p>
+                                <p class="text-xs text-gray-500">
+                                    Strings | Formatted Strings | String Methods | Numbers and Math Operations |
+                                    Operator Precedence | Math Functions | If Statements | Logical Operators |
+                                    Comparison Operators | While Loops
+                                </p>
+                                <div class="flex justify-between items-center mt-2">
+                                    <span class="text-xs text-gray-500">⏰ 10 Min Left</span>
+                                    <button
+                                        class="bg-yellow-400 hover:bg-yellow-500 text-white text-sm px-3 py-1 rounded">Join
+                                        Live</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
             </div>
         </div>
