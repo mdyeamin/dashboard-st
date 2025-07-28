@@ -291,8 +291,8 @@
                         <div class="bg-white rounded-xl p-4 shadow-sm flex justify-between items-start">
                             <!-- Left Side: Module Info -->
                             <div class="flex gap-4">
-                                <div class="bg-yellow-100 text-yellow-800 font-semibold text-sm px-2 py-1 rounded">
-                                    Module 01</div>
+                                <div class="bg-yellow text-center font-semibold text-sm px-2 py-1 rounded">
+                                    Module <br> 01</div>
                                 <div>
                                     <p class="font-semibold text-sm">Test Analysis</p>
                                     <p class="text-xs text-gray-500">8 Apr - 15 Apr</p>
@@ -307,32 +307,30 @@
                             </div>
 
                             <!-- Right Side: Video Box -->
-                            <div class="flex items-center gap-3 bg-yellow-100 p-3 rounded-lg">
-                                <div class="text-yellow-700">
-                                    <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2"
-                                        viewBox="0 0 24 24">
-                                        <path d="M15 10l4.6-2.3A1 1 0 0121 8.6v6.8a1 1 0 01-1.4.9L15 14" />
-                                        <rect x="3" y="5" width="12" height="14" rx="2" ry="2"></rect>
-                                    </svg>
+                            <div class="flex items-center gap-3 bg-black p-3 rounded-lg">
+                                <div class="bg-yellow p-4 rounded-lg">
+                                    <i class="fa-solid fa-video"></i>
                                 </div>
                                 <div class="flex flex-col">
-                                    <p class="text-sm font-semibold text-gray-800">Pre-Recorded Video</p>
-                                    <p class="text-xs text-gray-500">See the full video to complete this module</p>
+                                    <p class="text-sm font-semibold text-white">Pre-Recorded Video</p>
+                                    <p class="text-xs text-white">See the full video to complete this module</p>
                                 </div>
                                 <button
-                                    class="bg-yellow-400 hover:bg-yellow-500 text-white text-sm font-medium px-3 py-1 rounded">See
+                                    class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm font-medium px-3 py-1 rounded">See
                                     Video</button>
                             </div>
                         </div>
 
                         <!-- Completion Bar -->
-                        <div class="text-sm text-gray-700">
-                            Complete all items in the module.
-                            <span class="text-green-600">Quiz</span>
-                            <span class="text-green-600">Homework</span>
+                        <div class="text-sm text-gray-700 flex justify-between">
+                            <p>Complete all items in the module. <i class="fa-regular fa-circle-question text-red-400 mx-2"></i></p> 
+                            <div class="space-x-3">
+                                <span class="text-green-600"><i class="fa-regular fa-circle-check"></i> Quiz</span>
+                            <span class="text-green-600"> <i class="fa-regular fa-circle-check"></i> Homework</span>
                             <span class="text-gray-500">Exam</span>
                             <span class="text-gray-500">Coding Challenge</span>
                             <span class="text-gray-500">Bootcamp</span>
+                            </div>
                         </div>
 
                         <!-- Your Study Plan -->
