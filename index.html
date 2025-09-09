@@ -282,21 +282,31 @@
                 <div class=" min-h-screen p-4">
                     <!-- Profile Section -->
                     <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
+                        <!-- Left Side -->
                         <div class="lg:col-span-2">
+                            <!-- Profile Information -->
                             <div class="bg-white rounded-xl p-6 shadow">
                                 <h2 class="text-2xl font-bold mb-4">Personal Information</h2>
-                                <div class="flex items-center gap-4">
+
+                                <div class="flex flex-col md:flex-row items-center gap-4">
+                                    <!-- Profile Image -->
                                     <img src="images/profile.jpg" alt="Profile"
-                                        class="w-24 h-24 rounded-full object-cover" />
-                                    <div class="flex flex-col gap-2 flex-1">
-                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Full Name: Md.
-                                            Hasibul Hasan</div>
-                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Students ID:
-                                            000056</div>
-                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Phone Number:
-                                            016 4197 3817</div>
-                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">Email Address:
-                                            onlyhasan56@gmail.com</div>
+                                        class="w-24 h-24 rounded-full object-cover mx-auto md:mx-0" />
+
+                                    <!-- Profile Details -->
+                                    <div class="flex flex-col gap-2 flex-1 text-center md:text-left">
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">
+                                            <span class="font-medium">Full Name:</span> Md. Hasibul Hasan
+                                        </div>
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">
+                                            <span class="font-medium">Students ID:</span> 000056
+                                        </div>
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">
+                                            <span class="font-medium">Phone Number:</span> 016 4197 3817
+                                        </div>
+                                        <div class="border border-gray-200 rounded-md px-4 py-2 text-sm">
+                                            <span class="font-medium">Email Address:</span> onlyhasan56@gmail.com
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -307,92 +317,70 @@
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <!-- Course Card -->
                                     <a href="course_details.html">
-                                        <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
-                                            <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
+                                        <div
+                                            class="bg-gray-100 p-2 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                                            <img src="images/computer.jpg"
+                                                class="w-20 h-14 sm:w-24 sm:h-16 object-cover rounded-lg"
                                                 alt="Course" />
-                                            <div>
-                                                <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
-                                                <div class="flex gap-2 text-xs mt-1">
+                                            <div class="min-w-0">
+                                                <!-- ছোট ডিভাইসে title হবে text-sm, বড় হলে text-lg -->
+                                                <h3 class="font-semibold text-sm sm:text-lg truncate w-[15ch]"
+                                                    title="Business Analyst Bootcamp">
+                                                    Business Analyst Bootcamp
+                                                </h3>
+                                                <div class="flex flex-wrap gap-2 text-xs mt-1">
                                                     <span
-                                                        class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px]"><img
-                                                            class="w-3 inline-block mr-1" src="images/live_icon.png"
-                                                            alt="">
-                                                        On Going</span>
+                                                        class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px] rounded">
+                                                        <img class="w-3 inline-block mr-1"
+                                                            src="images/red_live_icon.png" alt="">
+                                                        On Going
+                                                    </span>
                                                     <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
 
+                                    <!-- Duplicate Course Example -->
                                     <a href="course_details.html">
-                                        <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
-                                            <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
+                                        <div
+                                            class="bg-gray-100 p-2 rounded-xl flex items-center gap-3 hover:shadow-md transition">
+                                            <img src="images/computer.jpg"
+                                                class="w-20 h-14 sm:w-24 sm:h-16 object-cover rounded-lg"
                                                 alt="Course" />
-                                            <div>
-                                                <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
-                                                <div class="flex gap-2 text-xs mt-1">
+                                            <div class="min-w-0">
+                                                <h3 class="font-semibold text-sm sm:text-lg truncate w-[15ch]"
+                                                    title="Business Analyst Bootcamp">
+                                                    Business Analyst Bootcamp
+                                                </h3>
+                                                <div class="flex flex-wrap gap-2 text-xs mt-1">
                                                     <span
-                                                        class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px]"><img
-                                                            class="w-3 inline-block mr-1" src="images/live_icon.png"
-                                                            alt="">
-                                                        On Going</span>
+                                                        class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px] rounded">
+                                                        <img class="w-3 inline-block mr-1"
+                                                            src="images/red_live_icon.png" alt="">
+                                                        On Going
+                                                    </span>
                                                     <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
                                                 </div>
                                             </div>
                                         </div>
                                     </a>
-
-                                    <a href="course_details.html">
-                                        <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
-                                            <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
-                                                alt="Course" />
-                                            <div>
-                                                <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
-                                                <div class="flex gap-2 text-xs mt-1">
-                                                    <span
-                                                        class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px]"><img
-                                                            class="w-3 inline-block mr-1" src="images/live_icon.png"
-                                                            alt="">
-                                                        On Going</span>
-                                                    <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
-
-                                    <a href="course_details.html">
-                                        <div class="bg-gray-50 rounded-xl flex gap-3 items-center">
-                                            <img src="images/computer.jpg" class="w-24 h-16 object-cover rounded-lg"
-                                                alt="Course" />
-                                            <div>
-                                                <h3 class="font-semibold text-sm">Business Analyst Bootcamp</h3>
-                                                <div class="flex gap-2 text-xs mt-1">
-                                                    <span
-                                                        class="flex items-center text-red-500 text-[11px] bg-red-100 px-2 py-[2px]"><img
-                                                            class="w-3 inline-block mr-1" src="images/live_icon.png"
-                                                            alt="">
-                                                        On Going</span>
-                                                    <span class="bg-gray-200 text-[11px] rounded px-2">Batch: 10</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </a>
-
                                 </div>
                             </div>
+
                         </div>
 
-                        <!-- Today's Class -->
+                        <!-- Right Side: Today’s Class -->
                         <div>
-                            <div class="bg-white p-5 rounded-xl shadow-sm w-full md:max-w-sm">
+                            <div class="bg-white p-5 rounded-xl shadow-sm w-full md:max-w-sm mx-auto lg:mx-0">
                                 <h2 class="text-red-600 text-lg font-semibold mb-4">Today’s classes – 12 July</h2>
 
                                 <!-- Single Class Card -->
-                                <div class="bg-gray-50 p-2 rounded-lg mb-4">
-                                    <div class="flex items-center justify-between text-xs mb-5 text-gray-600">
+                                <div class="bg-gray-100 p-2 rounded-lg mb-4">
+                                    <div class="flex items-center justify-start text-xs mb-5 text-gray-600">
                                         <span class="bg-gray-200 px-1 py-0.5 rounded font-medium">Batch: 10</span>
-                                        <span class="text-sm font-medium text-gray-700">Business Analyst Bootcamp</span>
+                                        <span class="text-sm font-medium text-gray-700 truncate w-[20ch]"
+                                            title="Business Analyst Bootcamp">Business Analyst Bootcamp</span>
                                     </div>
                                     <div class="flex items-center justify-between mb-2 text-sm text-gray-700">
                                         <span>Module 10</span>
@@ -412,11 +400,12 @@
                                     </button>
                                 </div>
 
-                                <!-- Duplicate Class Card (you can loop this) -->
-                                <div class="bg-gray-50 p-2 rounded-lg mb-4">
-                                    <div class="flex items-center justify-between text-xs mb-5 text-gray-600">
+                                <!-- Duplicate Card Example -->
+                                <div class="bg-gray-100 p-2 rounded-lg mb-4">
+                                    <div class="flex items-center justify-start text-xs mb-5 text-gray-600">
                                         <span class="bg-gray-200 px-1 py-0.5 rounded font-medium">Batch: 10</span>
-                                        <span class="text-sm font-medium text-gray-700">Business Analyst Bootcamp</span>
+                                        <span class="text-sm font-medium text-gray-700 truncate w-[20ch]"
+                                            title="Business Analyst Bootcamp">Business Analyst Bootcamp</span>
                                     </div>
                                     <div class="flex items-center justify-between mb-2 text-sm text-gray-700">
                                         <span>Module 10</span>
@@ -436,9 +425,9 @@
                                     </button>
                                 </div>
                             </div>
-
                         </div>
                     </div>
+
                 </div>
 
             </div>
