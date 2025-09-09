@@ -288,15 +288,16 @@
                         <div class="bg-white p-4 rounded-lg flex gap-4 w-full mb-6">
                             <button @click="tab = 'profile'"
                                 :class="tab === 'profile' ? 'bg-black text-yellow' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'"
-                                class=" px-20 border text-center py-2 font-semibold transition duration-200 rounded-lg">
+                                class="px-4 md:px-20 border text-center py-2 font-semibold transition duration-200 rounded-lg">
                                 Profile Info
                             </button>
                             <button @click="tab = 'payment'"
                                 :class="tab === 'payment' ? 'bg-black text-yellow' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'"
-                                class=" px-20 border text-center py-2 font-semibold transition duration-200 rounded-lg">
+                                class="px-4 md:px-20 border text-center py-2 font-semibold transition duration-200 rounded-lg">
                                 Payment Info
                             </button>
                         </div>
+
 
                         <div class="bg-white p-4 rounded-lg flex flex-col lg:flex-row gap-6 w-full">
 
@@ -313,9 +314,9 @@
                                             </button>
                                             <a href="profile_update.html">
                                                 <button
-                                                class="bg-gray-100 hover:bg-gray-200 text-black px-4 py-2 rounded flex items-center gap-2 font-semibold">
-                                                 Update <i class="fas fa-pen"></i>
-                                            </button>
+                                                    class="bg-gray-100 hover:bg-gray-200 text-black px-4 py-2 rounded flex items-center gap-2 font-semibold">
+                                                    Update <i class="fas fa-pen"></i>
+                                                </button>
                                             </a>
                                         </div>
                                     </div>
