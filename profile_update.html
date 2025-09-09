@@ -281,157 +281,129 @@
 
             <!-- Dynamic Content (right side content)-->
             <div id="main-content">
-                <div class="  rounded-lg">
-                    <div x-data="{ tab: 'profile' }" class="w-full px-4 lg:px-8 py-6">
+                <div class="max-w-5xl mx-auto bg-gray-50 p-6 rounded-lg shadow">
+                    <h2 class="text-lg font-semibold mb-6">Update your personal information</h2>
 
-                        <!-- Top Tabs: Profile & Payment -->
-                        <div class="bg-white p-4 rounded-lg flex gap-4 w-full mb-6">
-                            <button @click="tab = 'profile'"
-                                :class="tab === 'profile' ? 'bg-black text-yellow' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'"
-                                class=" px-20 border text-center py-2 font-semibold transition duration-200 rounded-lg">
-                                Profile Info
-                            </button>
-                            <button @click="tab = 'payment'"
-                                :class="tab === 'payment' ? 'bg-black text-yellow' : 'bg-gray-100 text-gray-800 hover:bg-gray-200'"
-                                class=" px-20 border text-center py-2 font-semibold transition duration-200 rounded-lg">
-                                Payment Info
-                            </button>
+                    <!-- Row 1 (2 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Full Name</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
                         </div>
-
-                        <div class="bg-white p-4 rounded-lg flex flex-col lg:flex-row gap-6 w-full">
-
-                            <!-- Left Section -->
-                            <div class="w-full lg:w-3/4">
-                                <!-- Profile Content -->
-                                <div x-show="tab === 'profile'" class="p-4">
-                                    <div class="mb-4 flex justify-between items-center mt-2">
-                                        <h3 class="text-2xl">Personal Details</h3>
-                                        <div class="flex gap-3">
-                                            <button
-                                                class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded flex items-center gap-2">
-                                                Download <i class="fas fa-download"></i>
-                                            </button>
-                                            <a href="profile_update.html">
-                                                <button
-                                                class="bg-gray-100 hover:bg-gray-200 text-black px-4 py-2 rounded flex items-center gap-2 font-semibold">
-                                                 Update <i class="fas fa-pen"></i>
-                                            </button>
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="bg-white rounded-xl">
-                                        <div class="grid grid-cols-1 text-sm sm:grid-cols-2 gap-3">
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Full
-                                                Name: Md. Hasibul Hasan</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Email:
-                                                onlyhasan56@gmail.com</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Students
-                                                ID: 000056</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Higher
-                                                Education: None</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Phone:
-                                                01641973817</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Address:
-                                                None</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">
-                                                Profession: Student</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">
-                                                Immigration Status: Citizen</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Country
-                                                of Origin: United States of America</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Date of
-                                                Birth: Jan 01, 2000</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Previous
-                                                Exposure: None</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">
-                                                Emergency Contact: 01641973817</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Gender:
-                                                None</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Arrival
-                                                Date: Jan 01, 2000</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">
-                                                Education Group: None</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Know Us:
-                                                Facebook</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Primary
-                                                language: None</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">Enrolled
-                                                Course: Software Test</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">
-                                                Signature: Hasibul Hasan</div>
-                                            <div class="px-3 py-2 rounded-lg border border-gray-300 bg-gray-50">
-                                                Discount: None</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- Payment Info Content -->
-                                <div x-show="tab === 'payment'" class="p-4">
-                                    <div class="bg-white rounded p-4 mt-2">
-                                        <div class="mb-4 flex justify-between items-center">
-                                            <h3 class="text-2xl">Payment Details</h3>
-                                            <button
-                                                class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded flex items-center gap-2">
-                                                Download <i class="fas fa-download"></i>
-                                            </button>
-                                        </div>
-
-                                        <div class="overflow-x-auto">
-                                            <table class="w-full border-collapse">
-                                                <thead>
-                                                    <tr class="bg-yellow-400 text-black rounded-lg">
-                                                        <th class="px-1 py-3 text-left font-semibold rounded-l-lg">Date
-                                                        </th>
-                                                        <th class="px-1 py-3 text-left font-semibold">Amount</th>
-                                                        <th class="px-1 py-3 text-left font-semibold">Installment</th>
-                                                        <th class="px-1 py-3 text-left font-semibold">Method</th>
-                                                        <th class="px-1 py-3 text-left font-semibold rounded-r-lg">
-                                                            Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody class="divide-y divide-gray-300">
-                                                    <tr>
-                                                        <td class="px-1 py-3">May 01, 25</td>
-                                                        <td class="px-1 py-3">$ 5,000</td>
-                                                        <td class="px-1 py-3">Installment</td>
-                                                        <td class="px-1 py-3">Paypal</td>
-                                                        <td class="px-1 py-3">Approved</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="px-1 py-3">May 01, 25</td>
-                                                        <td class="px-1 py-3">$ 5,000</td>
-                                                        <td class="px-1 py-3">Installment</td>
-                                                        <td class="px-1 py-3">Paypal</td>
-                                                        <td class="px-1 py-3">Approved</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td class="px-1 py-3">May 01, 25</td>
-                                                        <td class="px-1 py-3">$ 5,000</td>
-                                                        <td class="px-1 py-3">Installment</td>
-                                                        <td class="px-1 py-3">Paypal</td>
-                                                        <td class="px-1 py-3">Approved</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Right: Avatar -->
-                            <div class="w-full lg:w-1/4 mt-20">
-                                <div class="bg-white rounded p-4 text-center">
-                                    <img src="/images/profile.jpg" alt="Avatar"
-                                        class="w-32 h-32 rounded-full object-cover mx-auto mb-3">
-                                    <div class="bg-orange-500 text-white text-sm font-medium py-1 px-3 rounded">
-                                        EIT2023AU0116
-                                    </div>
-                                </div>
-                            </div>
+                        <div>
+                            <label class="block font-medium mb-1">Email Address</label>
+                            <input type="email" class="w-full border rounded-lg p-2" placeholder="Enter...">
                         </div>
                     </div>
+
+                    <!-- Row 2 (3 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Student ID</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Higher Education</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Phone</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                    </div>
+
+                    <!-- Row 3 (2 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Address</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Profession</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                    </div>
+
+                    <!-- Row 4 (3 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Immigration Status</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Country of Origin</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Date of Birth</label>
+                            <input type="date" class="w-full border rounded-lg p-2">
+                        </div>
+                    </div>
+
+                    <!-- Row 5 (2 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Previous Exposure</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Emergency Contact</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                    </div>
+
+                    <!-- Row 6 (3 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Gender</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Arrival Date</label>
+                            <input type="date" class="w-full border rounded-lg p-2">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Education Group</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                    </div>
+
+                    <!-- Row 7 (2 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div>
+                            <label class="block font-medium mb-1">Know Us</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Primary Language</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                    </div>
+
+                    <!-- Row 8 (3 Inputs) -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                        <div>
+                            <label class="block font-medium mb-1">Enrolled Course</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Signature</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                        <div>
+                            <label class="block font-medium mb-1">Discount</label>
+                            <input type="text" class="w-full border rounded-lg p-2" placeholder="Enter...">
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="text-right">
+                        <button class="bg-gray-300 px-6 py-2 rounded-lg hover:bg-black hover:text-yellow font-semibold">
+                            Update
+                        </button>
+                    </div>
                 </div>
+
 
             </div>
         </div>
