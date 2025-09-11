@@ -37,7 +37,7 @@
 
 </head>
 
-<body class="bg-primary-bg max-w-6xl mx-auto">
+<body class="bg-primary-bg max-w-7xl mx-auto">
     <header class="bg-white h-16 my-3 rounded-2xl px-5">
         <div class="h-full flex justify-between items-center ">
             <img class="w-40" src="images/logo.png" alt="">
@@ -602,61 +602,111 @@
                             </div>
 
                             <!-- Right Content -->
-                            <div class="max-h-min bg-white rounded-lg shadow p-4">
-                                <h3 class="text-lg font-semibold mb-4">Overview</h3>
+                            <div class="bg-white rounded-lg shadow p-6">
+                                <h3 class="text-lg font-semibold mb-6">Overview</h3>
 
-                                <div class="space-y-2 text-sm">
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Quiz</span>
-                                            <span>78%</span>
+                                <div class="grid grid-cols-3 gap-6 text-center">
+
+                                    <!-- Circle 1 -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="relative w-16 h-16">
+                                            <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                                <!-- Background -->
+                                                <path class="text-gray-200" stroke-width="4" stroke="currentColor"
+                                                    fill="none" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                                <!-- Progress -->
+                                                <path class="text-red-500" stroke-width="4" stroke="currentColor"
+                                                    fill="none" stroke-dasharray="100" stroke-dashoffset="22"
+                                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                            </svg>
+                                            <!-- Percentage text center -->
+                                            <span
+                                                class="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700">
+                                                78%
+                                            </span>
                                         </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 78%"></div>
-                                        </div>
+                                        <p class="text-xs mt-2 font-bold text-gray-600">Quiz</p>
                                     </div>
 
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Homework</span>
-                                            <span>50%</span>
+                                    <!-- Circle 2 -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="relative w-16 h-16">
+                                            <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                                <path class="text-gray-200" stroke-width="4" stroke="currentColor"
+                                                    fill="none" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                                <path class="text-red-500" stroke-width="4" stroke="currentColor"
+                                                    fill="none" stroke-dasharray="100" stroke-dashoffset="50"
+                                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                            </svg>
+                                            <span
+                                                class="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700">
+                                                50%
+                                            </span>
                                         </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 50%"></div>
-                                        </div>
+                                        <p class="text-xs mt-2 font-bold text-gray-600">Homework</p>
                                     </div>
 
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Exam</span>
-                                            <span>86%</span>
+                                    <!-- Circle 3 -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="relative w-16 h-16">
+                                            <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                                <path class="text-gray-200" stroke-width="4" stroke="currentColor"
+                                                    fill="none" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                                <path class="text-red-500" stroke-width="4" stroke="currentColor"
+                                                    fill="none" stroke-dasharray="100" stroke-dashoffset="14"
+                                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                            </svg>
+                                            <span
+                                                class="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700">
+                                                86%
+                                            </span>
                                         </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 86%"></div>
-                                        </div>
+                                        <p class="text-xs mt-2 font-bold text-gray-600">Exam</p>
                                     </div>
 
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Coding Challenge</span>
-                                            <span>67%</span>
+                                    <!-- Circle 4 -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="relative w-16 h-16">
+                                            <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                                <path class="text-gray-200" stroke-width="4" stroke="currentColor"
+                                                    fill="none" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                                <path class="text-red-500" stroke-width="4" stroke="currentColor"
+                                                    fill="none" stroke-dasharray="100" stroke-dashoffset="33"
+                                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                            </svg>
+                                            <span
+                                                class="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700">
+                                                67%
+                                            </span>
                                         </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 67%"></div>
-                                        </div>
+                                        <p class="text-xs mt-2 font-bold text-gray-600">Coding Challenge</p>
                                     </div>
 
-                                    <div>
-                                        <div class="flex justify-between mb-1">
-                                            <span>Bootcamp</span>
-                                            <span>47%</span>
+                                    <!-- Circle 5 -->
+                                    <div class="flex flex-col items-center">
+                                        <div class="relative w-16 h-16">
+                                            <svg class="w-16 h-16 transform -rotate-90" viewBox="0 0 36 36">
+                                                <path class="text-gray-200" stroke-width="4" stroke="currentColor"
+                                                    fill="none" d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                                <path class="text-red-500" stroke-width="4" stroke="currentColor"
+                                                    fill="none" stroke-dasharray="100" stroke-dashoffset="53"
+                                                    d="M18 2a16 16 0 1 1 0 32 16 16 0 1 1 0-32" />
+                                            </svg>
+                                            <span
+                                                class="absolute inset-0 flex items-center justify-center text-xs font-bold text-gray-700">
+                                                47%
+                                            </span>
                                         </div>
-                                        <div class="progress-bar">
-                                            <div class="progress-fill" style="width: 47%"></div>
-                                        </div>
+                                        <p class="text-xs mt-2 font-bold text-gray-600">Bootcamp</p>
                                     </div>
+
                                 </div>
                             </div>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -787,198 +837,7 @@
         
         `,
 
-                // user user bootcamp  
-                super_user_bootcamp: `
-        <div>
-            <h1 class="text-2xl font-bold">Bootcamp List</h1>
-            <div class="flex gap-5 my-3 items-center justify-center">
-              <form class=" rounded-xl shadow-md w-6/12 bg-white  ">
-                <select id="option" name="option" class="w-full p-2 rounded-md focus:outline-none">
-                  <option value="">Select Your Course</option>
-                  <option value="one">Option One</option>
-                  <option value="two">Option Two</option>
-                  <option value="three">Option Three</option>
-                </select>
-              </form>
 
-              <form class="bg-white rounded-xl shadow-md w-6/12">
-                      <div class="flex">
-                          <input type="text" id="search" name="search" placeholder="Type to search..."
-                              class="flex-grow p-2 focus:outline-none ">
-                          <button type="submit" class="bg-yellow-400 text-black px-4 rounded-r-md hover:bg-yellow-500"><i
-                                  class="fa-solid fa-magnifying-glass"></i></button>
-                      </div>
-
-                  </form>
-
-            </div>
-            <table class="w-full mt-4 text-left bg-white rounded shadow-sm">
-              <thead class="bg-yellow-300">
-                <tr class="text-sm font-semibold">
-                  <th class="px-4 py-2">SL</th>
-                  <th class="px-4 py-2">Bootcamp Name</th>
-                  <th class="px-4 py-2">Batch</th>
-                  <th class="px-4 py-2">Starting Date</th>
-                  
-                  <th class="px-4 py-2">Action</th>
-                </tr>
-              </thead>
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-
-              <tbody class="text-sm divide-y">
-                <tr>
-                  <td class="px-4 py-2">01</td>
-                  <td class="px-4 py-2">type test</td>
-                  <td class="px-4 py-2">2025QA01</td>
-                  <td class="px-4 py-2">12 May 2025</td>
-                  
-                  <td class="px-4 py-2">
-                    <button class="bg-blue-600 border text-white px-3 py-1 rounded text-sm">Result</button>
-                    <button class="bg-transparent text-blue-600 border hover:bg-blue-600 hover:text-white px-3 py-1 rounded text-sm">Delete</button>
-                  </td>
-                <tr/> 
-              </tbody>
-              
-
-            </table>
-          </div>
-        `,
-
-                // user user others  
-                super_user_others: `
-        
-        `,
-
-
-                // user user bootcamp  
-                super_user_join_class: `
-       
-        `,
 
 
             };
