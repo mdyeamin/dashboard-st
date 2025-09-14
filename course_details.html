@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
     <!-- fontawesome cdn  -->
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
     <!-- custom css -->
@@ -17,18 +17,6 @@
         --color-dark-gray: #132022;
         --color-yellow: #fbcd13
       }
-
-      .progress-bar {
-      height: 6px;
-      background-color: #e5e7eb;
-      border-radius: 9999px;
-      overflow: hidden;
-    }
-
-    .progress-fill {
-      height: 100%;
-      background-color: #3b82f6;
-    }
     </style>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
@@ -344,58 +332,68 @@
                                 </div>
 
                                 <div class="flex flex-wrap gap-2">
-                                    <button class="px-4 py-1 bg-black text-white text-sm rounded">Module</button>
-                                    <button class="px-4 py-1 border border-gray-300 rounded text-sm">Assignment</button>
-                                    <button class="px-4 py-1 border border-gray-300 rounded text-sm">Recording</button>
-                                    <button class="px-4 py-1 border border-gray-300 rounded text-sm">Recourse</button>
+                                    <button class="px-4 py-1 bg-black text-yellow-400 text-sm rounded">Module</button>
                                     <button
-                                        class="px-4 py-1 border border-gray-300 rounded text-sm">Certificates</button>
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Assignment</button>
+                                    <button
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Recording</button>
+                                    <button
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Recourse</button>
+                                    <button
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Certificates</button>
                                 </div>
 
                                 <!-- Cards -->
                                 <div class="grid md:grid-cols-2 gap-4">
                                     <!-- Card 1 -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
+                                    <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+         space-y-3 font-sans text-black bg-white 
+         transition-all duration-500 hover:border-yellow-400 ">
+
+                                        <!-- Top-right gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute top-0 right-0 w-24 h-24 rounded-tr-xl 
+              bg-gradient-to-bl from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
+                                        <!-- Bottom-left gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute bottom-0 left-0 w-24 h-24 rounded-bl-xl 
+              bg-gradient-to-tr from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
+                                        <div class="flex justify-between items-start relative z-10">
                                             <div>
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
                                             <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
+                                                <div class="w-8/12 mx-auto rounded-full h-2">
+                                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                                        <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                                                            style="width: 78%;"></div>
                                                     </div>
                                                 </div>
+                                                <div class="text-xs text-center text-green-600 mt-1">✔ Finished</div>
                                             </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
+                                            <div class="text-xs flex flex-col items-center">
+                                                <p class="text-gray-400">
+                                                    0/5 Item <i
+                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i>
+                                                </p>
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
 
-
-
                                         <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
+                                        <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
                                         </p>
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
+                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
                                             <li class="font-semibold">Quiz</li>
                                             <li class="font-semibold">Homework</li>
                                             <li class="font-semibold">Exam</li>
@@ -404,60 +402,75 @@
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
+                                        <div class="flex gap-2 pt-2 relative z-10">
                                             <a href="study_plan.html">
                                                 <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                    Plan</button>
+                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                    Study Plan
+                                                </button>
                                             </a>
                                             <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
+                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                Feedback
+                                            </button>
                                         </div>
                                     </div>
 
 
+
+
+
+
+
                                     <!-- Repeat Card -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
+                                     <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+         space-y-3 font-sans text-black bg-white 
+         transition-all duration-500 hover:border-yellow-400 ">
+
+                                        <!-- Top-right gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute top-0 right-0 w-24 h-24 rounded-tr-xl 
+              bg-gradient-to-bl from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
+                                        <!-- Bottom-left gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute bottom-0 left-0 w-24 h-24 rounded-bl-xl 
+              bg-gradient-to-tr from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
+                                        <div class="flex justify-between items-start relative z-10">
                                             <div>
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
                                             <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
+                                                <div class="w-8/12 mx-auto rounded-full h-2">
+                                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                                        <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                                                            style="width: 78%;"></div>
                                                     </div>
                                                 </div>
+                                                <div class="text-xs text-center text-green-600 mt-1">✔ Finished</div>
                                             </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
+                                            <div class="text-xs flex flex-col items-center">
+                                                <p class="text-gray-400">
+                                                    0/5 Item <i
+                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i>
+                                                </p>
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
 
-
-
                                         <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
+                                        <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
                                         </p>
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
+                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
                                             <li class="font-semibold">Quiz</li>
                                             <li class="font-semibold">Homework</li>
                                             <li class="font-semibold">Exam</li>
@@ -466,58 +479,68 @@
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
+                                        <div class="flex gap-2 pt-2 relative z-10">
                                             <a href="study_plan.html">
                                                 <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                    Plan</button>
+                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                    Study Plan
+                                                </button>
                                             </a>
                                             <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
+                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                Feedback
+                                            </button>
                                         </div>
                                     </div>
                                     <!-- Repeat Card -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
+                                     <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+         space-y-3 font-sans text-black bg-white 
+         transition-all duration-500 hover:border-yellow-400 ">
+
+                                        <!-- Top-right gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute top-0 right-0 w-24 h-24 rounded-tr-xl 
+              bg-gradient-to-bl from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
+                                        <!-- Bottom-left gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute bottom-0 left-0 w-24 h-24 rounded-bl-xl 
+              bg-gradient-to-tr from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
+                                        <div class="flex justify-between items-start relative z-10">
                                             <div>
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
                                             <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
+                                                <div class="w-8/12 mx-auto rounded-full h-2">
+                                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                                        <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                                                            style="width: 78%;"></div>
                                                     </div>
                                                 </div>
+                                                <div class="text-xs text-center text-green-600 mt-1">✔ Finished</div>
                                             </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
+                                            <div class="text-xs flex flex-col items-center">
+                                                <p class="text-gray-400">
+                                                    0/5 Item <i
+                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i>
+                                                </p>
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
 
-
-
                                         <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
+                                        <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
                                         </p>
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
+                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
                                             <li class="font-semibold">Quiz</li>
                                             <li class="font-semibold">Homework</li>
                                             <li class="font-semibold">Exam</li>
@@ -526,60 +549,68 @@
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
+                                        <div class="flex gap-2 pt-2 relative z-10">
                                             <a href="study_plan.html">
-                                                <a href="study_plan.html">
-                                                    <button
-                                                        class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                        Plan</button>
-                                                </a>
+                                                <button
+                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                    Study Plan
+                                                </button>
                                             </a>
                                             <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
+                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                Feedback
+                                            </button>
                                         </div>
                                     </div>
                                     <!-- Repeat Card -->
-                                    <div
-                                        class="max-w-sm p-4 rounded-xl border shadow-sm space-y-3 font-sans text-black bg-white">
+                                     <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+         space-y-3 font-sans text-black bg-white 
+         transition-all duration-500 hover:border-yellow-400 ">
+
+                                        <!-- Top-right gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute top-0 right-0 w-24 h-24 rounded-tr-xl 
+              bg-gradient-to-bl from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
+                                        <!-- Bottom-left gradient (corner theke start) -->
+                                        <div class="pointer-events-none absolute bottom-0 left-0 w-24 h-24 rounded-bl-xl 
+              bg-gradient-to-tr from-yellow-300/40 via-yellow-200/20 to-transparent 
+              opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        </div>
+
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start">
+                                        <div class="flex justify-between items-start relative z-10">
                                             <div>
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
                                             <div class="flex-1 mx-2 mt-1">
-                                                <div class="w-8/12  mx-auto  rounded-full h-2">
-                                                    <!-- progress  -->
-                                                    <div class=" ">
-
-                                                        <div class="w-full bg-gray-200 rounded-full h-2">
-                                                            <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
-                                                                style="width: 78%;"></div>
-                                                        </div>
-                                                    </div>
-
-
-                                                    <div class="text-xs text-center text-green-600 mt-1">✔ Finished
+                                                <div class="w-8/12 mx-auto rounded-full h-2">
+                                                    <div class="w-full bg-gray-200 rounded-full h-2">
+                                                        <div class="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                                                            style="width: 78%;"></div>
                                                     </div>
                                                 </div>
+                                                <div class="text-xs text-center text-green-600 mt-1">✔ Finished</div>
                                             </div>
-                                            <div class=" text-xs flex flex-col items-center ">
-                                                <p class="text-gray-400">0/5 Item <i
-                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i></p>
+                                            <div class="text-xs flex flex-col items-center">
+                                                <p class="text-gray-400">
+                                                    0/5 Item <i
+                                                        class="fa-regular fa-circle-question text-red-400 mx-2"></i>
+                                                </p>
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
 
-
-
                                         <!-- Title -->
-                                        <p class="text-lg font-semibold leading-snug">
+                                        <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
                                         </p>
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 space-y-0.5">
+                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
                                             <li class="font-semibold">Quiz</li>
                                             <li class="font-semibold">Homework</li>
                                             <li class="font-semibold">Exam</li>
@@ -588,14 +619,17 @@
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2">
+                                        <div class="flex gap-2 pt-2 relative z-10">
                                             <a href="study_plan.html">
                                                 <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Study
-                                                    Plan</button>
+                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                    Study Plan
+                                                </button>
                                             </a>
                                             <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">Feedback</button>
+                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:bg-gray-100">
+                                                Feedback
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
