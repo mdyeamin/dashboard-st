@@ -332,15 +332,16 @@
                                 </div>
 
                                 <div class="flex flex-wrap gap-2">
-                                    <button class="px-4 py-1 bg-black text-yellow-400 text-sm rounded">Module</button>
                                     <button
-                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Assignment</button>
+                                        class="px-4 py-1 bg-black text-yellow transition-colors diration-300 ease-in-out text-sm rounded">Module</button>
                                     <button
-                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Recording</button>
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow transition-colors diration-300 ease-in-out border-gray-300 rounded text-sm">Assignment</button>
                                     <button
-                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Recourse</button>
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow transition-colors diration-300 ease-in-out border-gray-300 rounded text-sm">Recording</button>
                                     <button
-                                        class="px-4 py-1 border hover:bg-black hover:text-yellow-400 border-gray-300 rounded text-sm">Certificates</button>
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow transition-colors diration-300 ease-in-out border-gray-300 rounded text-sm">Recourse</button>
+                                    <button
+                                        class="px-4 py-1 border hover:bg-black hover:text-yellow transition-colors diration-300 ease-in-out border-gray-300 rounded text-sm">Certificates</button>
                                 </div>
 
                                 <!-- Cards -->
@@ -363,8 +364,8 @@
                                         </div>
 
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start relative z-10">
-                                            <div>
+                                        <div class="flex justify-between items-start mb-0 relative z-10">
+                                            <div class="bg-gray-50 p-4 rounded-lg text-center">
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
@@ -385,7 +386,8 @@
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
-
+                                        <hr class="text-gray-300">
+                                        <h3 class="font-bold text-gray-500 mb-0">Orientation</h3>
                                         <!-- Title -->
                                         <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
@@ -393,27 +395,66 @@
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
+                                            class="text-xs flex flex-wrap gap-x-5 gap-y-3 text-gray-700   relative z-10">
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/live.png" alt="">
+                                                <li class="font-semibold">
+                                                    Live Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/recorded.png" alt="">
+                                                <li class="font-semibold">
+                                                    Recorded Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/support.png" alt="">
+                                                <li class="font-semibold">
+                                                    Support Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/quizi.png" alt="">
+                                                <li class="font-semibold">
+                                                    Quiz</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/assignment.png" alt="">
+                                                <li class="font-semibold">
+                                                    Assignment</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/coding.png" alt="">
+                                                <li class="font-semibold">
+                                                    Coding Challenge</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/note.png" alt="">
+                                                <li class="font-semibold">
+                                                    Class Notes</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/question.png" alt="">
+                                                <li class="font-semibold">
+                                                    Interview Questions</li>
+                                            </div>
+
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2 relative z-10">
+                                        <div class="flex gap-5 pt-2 items-center justify-center relative z-10">
                                             <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                                <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+             hover:text-yellow hover:bg-black 
+             transition-colors duration-300 ease-in-out">
                                                     Study Plan
                                                 </button>
                                             </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                            <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+           hover:text-yellow hover:bg-black 
+           transition-colors duration-300 ease-in-out">
                                                 Feedback
                                             </button>
                                         </div>
+
                                     </div>
 
 
@@ -423,7 +464,7 @@
 
 
                                     <!-- Repeat Card -->
-                                     <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+                                    <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
          space-y-3 font-sans text-black bg-white 
          transition-all duration-500 hover:border-yellow-400 ">
 
@@ -440,8 +481,8 @@
                                         </div>
 
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start relative z-10">
-                                            <div>
+                                        <div class="flex justify-between items-start mb-0 relative z-10">
+                                            <div class="bg-gray-50 p-4 rounded-lg text-center">
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
@@ -462,7 +503,8 @@
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
-
+                                        <hr class="text-gray-300">
+                                        <h3 class="font-bold text-gray-500 mb-0">Orientation</h3>
                                         <!-- Title -->
                                         <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
@@ -470,31 +512,70 @@
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
+                                            class="text-xs flex flex-wrap gap-x-5 gap-y-3 text-gray-700   relative z-10">
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/live.png" alt="">
+                                                <li class="font-semibold">
+                                                    Live Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/recorded.png" alt="">
+                                                <li class="font-semibold">
+                                                    Recorded Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/support.png" alt="">
+                                                <li class="font-semibold">
+                                                    Support Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/quizi.png" alt="">
+                                                <li class="font-semibold">
+                                                    Quiz</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/assignment.png" alt="">
+                                                <li class="font-semibold">
+                                                    Assignment</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/coding.png" alt="">
+                                                <li class="font-semibold">
+                                                    Coding Challenge</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/note.png" alt="">
+                                                <li class="font-semibold">
+                                                    Class Notes</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/question.png" alt="">
+                                                <li class="font-semibold">
+                                                    Interview Questions</li>
+                                            </div>
+
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2 relative z-10">
+                                        <div class="flex gap-5 pt-2 items-center justify-center relative z-10">
                                             <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                                <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+             hover:text-yellow hover:bg-black 
+             transition-colors duration-300 ease-in-out">
                                                     Study Plan
                                                 </button>
                                             </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                            <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+           hover:text-yellow hover:bg-black 
+           transition-colors duration-300 ease-in-out">
                                                 Feedback
                                             </button>
                                         </div>
+
                                     </div>
 
                                     <!-- Repeat Card -->
-                                     <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+                                    <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
          space-y-3 font-sans text-black bg-white 
          transition-all duration-500 hover:border-yellow-400 ">
 
@@ -511,8 +592,8 @@
                                         </div>
 
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start relative z-10">
-                                            <div>
+                                        <div class="flex justify-between items-start mb-0 relative z-10">
+                                            <div class="bg-gray-50 p-4 rounded-lg text-center">
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
@@ -533,7 +614,8 @@
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
-
+                                        <hr class="text-gray-300">
+                                        <h3 class="font-bold text-gray-500 mb-0">Orientation</h3>
                                         <!-- Title -->
                                         <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
@@ -541,31 +623,70 @@
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
+                                            class="text-xs flex flex-wrap gap-x-5 gap-y-3 text-gray-700   relative z-10">
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/live.png" alt="">
+                                                <li class="font-semibold">
+                                                    Live Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/recorded.png" alt="">
+                                                <li class="font-semibold">
+                                                    Recorded Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/support.png" alt="">
+                                                <li class="font-semibold">
+                                                    Support Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/quizi.png" alt="">
+                                                <li class="font-semibold">
+                                                    Quiz</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/assignment.png" alt="">
+                                                <li class="font-semibold">
+                                                    Assignment</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/coding.png" alt="">
+                                                <li class="font-semibold">
+                                                    Coding Challenge</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/note.png" alt="">
+                                                <li class="font-semibold">
+                                                    Class Notes</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/question.png" alt="">
+                                                <li class="font-semibold">
+                                                    Interview Questions</li>
+                                            </div>
+
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2 relative z-10">
+                                        <div class="flex gap-5 pt-2 items-center justify-center relative z-10">
                                             <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                                <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+             hover:text-yellow hover:bg-black 
+             transition-colors duration-300 ease-in-out">
                                                     Study Plan
                                                 </button>
                                             </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                            <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+           hover:text-yellow hover:bg-black 
+           transition-colors duration-300 ease-in-out">
                                                 Feedback
                                             </button>
                                         </div>
+
                                     </div>
 
                                     <!-- Repeat Card -->
-                                     <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
+                                    <div class="relative max-w-sm p-4 rounded-xl border-[1.5px] border-transparent shadow-sm 
          space-y-3 font-sans text-black bg-white 
          transition-all duration-500 hover:border-yellow-400 ">
 
@@ -582,8 +703,8 @@
                                         </div>
 
                                         <!-- Top Row: Module & Progress -->
-                                        <div class="flex justify-between items-start relative z-10">
-                                            <div>
+                                        <div class="flex justify-between items-start mb-0 relative z-10">
+                                            <div class="bg-gray-50 p-4 rounded-lg text-center">
                                                 <p class="text-xs text-gray-500">Module</p>
                                                 <p class="font-semibold text-sm">01</p>
                                             </div>
@@ -604,7 +725,8 @@
                                                 <p class="px-2 rounded my-5 bg-gray-100">8 Apr - 15 Apr</p>
                                             </div>
                                         </div>
-
+                                        <hr class="text-gray-300">
+                                        <h3 class="font-bold text-gray-500 mb-0">Orientation</h3>
                                         <!-- Title -->
                                         <p class="text-lg font-semibold leading-snug relative z-10">
                                             Early bird: Those who enrolled before the start of classes
@@ -612,27 +734,66 @@
 
                                         <!-- Tags -->
                                         <ul
-                                            class="text-xs flex flex-wrap gap-x-8 gap-y-3 text-gray-700 list-disc pl-5 relative z-10">
-                                            <li class="font-semibold">Quiz</li>
-                                            <li class="font-semibold">Homework</li>
-                                            <li class="font-semibold">Exam</li>
-                                            <li class="font-semibold">Bootcamp</li>
-                                            <li class="font-semibold">Coding Challenge</li>
+                                            class="text-xs flex flex-wrap gap-x-5 gap-y-3 text-gray-700   relative z-10">
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/live.png" alt="">
+                                                <li class="font-semibold">
+                                                    Live Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/recorded.png" alt="">
+                                                <li class="font-semibold">
+                                                    Recorded Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/support.png" alt="">
+                                                <li class="font-semibold">
+                                                    Support Class</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/quizi.png" alt="">
+                                                <li class="font-semibold">
+                                                    Quiz</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/assignment.png" alt="">
+                                                <li class="font-semibold">
+                                                    Assignment</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/coding.png" alt="">
+                                                <li class="font-semibold">
+                                                    Coding Challenge</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/note.png" alt="">
+                                                <li class="font-semibold">
+                                                    Class Notes</li>
+                                            </div>
+                                            <div class="flex items-center ">
+                                                <img class="w-4 mr-1" src="images/question.png" alt="">
+                                                <li class="font-semibold">
+                                                    Interview Questions</li>
+                                            </div>
+
                                         </ul>
 
                                         <!-- Buttons -->
-                                        <div class="flex gap-2 pt-2 relative z-10">
+                                        <div class="flex gap-5 pt-2 items-center justify-center relative z-10">
                                             <a href="study_plan.html">
-                                                <button
-                                                    class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                                <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+             hover:text-yellow hover:bg-black 
+             transition-colors duration-300 ease-in-out">
                                                     Study Plan
                                                 </button>
                                             </a>
-                                            <button
-                                                class="border border-gray-300 rounded-md px-3 py-1 text-sm font-medium hover:text-yellow-400 hover:bg-black">
+                                            <button class="border border-gray-300 rounded-md px-8 py-1 text-md font-medium 
+           hover:text-yellow hover:bg-black 
+           transition-colors duration-300 ease-in-out">
                                                 Feedback
                                             </button>
                                         </div>
+
                                     </div>
 
                                 </div>
